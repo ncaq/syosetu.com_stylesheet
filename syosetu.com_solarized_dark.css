@@ -31,13 +31,13 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-@-moz-document regexp('^https?://(ncode|novel18)\\.syosetu\\.com/[^/]*/$'),
-regexp('^https?://(ncode|novel18)\\.syosetu\\.com/[^/]*/[^/\\D]*/$') {
+@-moz-document regexp('https?://(ncode|novel(18)?)\\.syosetu\\.(com|org)/.*') {
   body,
   input,
   .novel_hyouka,
   .recommend_novel,
   .contents2,
+  #container,
   #novel_color,
   #menu_on,
   #hyoukalan,
@@ -48,29 +48,33 @@ regexp('^https?://(ncode|novel18)\\.syosetu\\.com/[^/]*/[^/\\D]*/$') {
   #head_nav {
     background-color: #002b36 !important;
     color: #839496 !important;
+    border-color: #586e75 !important;
   }
 
+  #container,
+  #entry_box {
+    border-style: none !important;
+  }
+
+  input,
+  .genre,
   .link_back,
-  #head_nav li {
+  #head_nav li,
+  #hyoukalan,
+  #novel_attention {
     border-color: #586e75 !important;
   }
 
   .contents1,
   .nothing,
   .novel_bn,
+  .novelnavi a,
   #novel_header,
   #header_main,
   #head_nav {
     background: none;
     border-color: #586e75 !important;
     /* border-bottom: solid 1px !important; */
-  }
-
-  input,
-  .genre,
-  #hyoukalan,
-  #novel_attention {
-    border-color: #586e75 !important;
   }
 
   .novel_hyouka label {
