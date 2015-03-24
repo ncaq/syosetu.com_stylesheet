@@ -1,18 +1,18 @@
 /*
   syosetu.com - solarized dark
-  */
+*/
 
 /*
   My original code module is CC0 - Public Domain.
-  */
+*/
 
 /*
   Credit
-  */
+*/
 
 /*
   Based on solarized http://ethanschoonover.com/solarized
-  */
+*/
 
 /*
   Copyright (c) 2011 Ethan Schoonover
@@ -53,87 +53,89 @@ $blue:    #268bd2;
 $cyan:    #2aa198;
 $green:   #859900;
 
-@-moz-document regexp('^https?://(ncode|novel18)\\.syosetu\\.com/[^/]*/$'), regexp('^https?://(ncode|novel18)\\.syosetu\\.com/[^/]*/[^/\\D]*/$')
-{
-    
-    body,
-    input,
-    .novel_hyouka,
-    .recommend_novel,
-    .contents2,
-    #novel_color,
-    #menu_on,
-    #hyoukalan,
-    #novel_attention,
-    #recommend,
-    #footer,
-    #header_main,               // mobile
-    #head_nav,                  // mobile
-    {
-        background-color: $base03 !important;
-        color:            $base0  !important;
-    }
+@-moz-document
+regexp('^https?://(ncode|novel18)\\.syosetu\\.com/[^/]*/$'),
+regexp('^https?://(ncode|novel18)\\.syosetu\\.com/[^/]*/[^/\\D]*/$')
+      {
+          body,
+          input,
+          .novel_hyouka,
+          .recommend_novel,
+          .contents2,
+          #novel_color,
+          #menu_on,
+          #hyoukalan,
+          #novel_attention,
+          #recommend,
+          #footer,
+          #header_main,               // mobile
+          #head_nav,                  // mobile
+          {
+              background-color: $base03 !important;
+              color:            $base0  !important;
+          }
 
-    .link_back,                 // mobile
-    #head_nav li,               // mobile
-    {
-        border-color: $base01 !important;
-    }
+          .link_back,                 // mobile
+          #head_nav li,               // mobile
+          {
+              border-color: $base01 !important;
+          }
 
-    .contents1,
-    .nothing,
-    .novel_bn,                  // mobile
-    #novel_header,
-    #header_main,               // mobile
-    #head_nav,                  // mobile
-    {
-        background:    none;
-        
-        border-color:  $base01   !important;
-    /* border-bottom: solid 1px !important; */
-    }
+          .contents1,
+          .nothing,
+          .novel_bn,                  // mobile
+          #novel_header,
+          #header_main,               // mobile
+          #head_nav,                  // mobile
+          {
+              background:    none;
 
-    input,
-    .genre,
-    #hyoukalan,
-    #novel_attention,
-    {
-        border-color: $base01 !important;
-    }
+              border-color:  $base01   !important;
+              /* border-bottom: solid 1px !important; */
+          }
 
-    .novel_hyouka label
-    {
-        color: $yellow !important;
-    }
-    
-    .novel_title,
-    .novel_subtitle,
-    .novel_writername,
-    .chapter_title,
-    .genre,
-    {
-        background-color: $base02 !important;
-        color:            $base1  !important;
-    }
+          input,
+          .genre,
+          #hyoukalan,
+          #novel_attention,
+          {
+              border-color: $base01 !important;
+          }
 
-    #pageBottom,
-    #pageTop,
-    {
-        display: none !important;
-    }
-    
-    img
-    {
-        background-color: #FFFFFF !important;
-    }
-    
-    a
-    {
-        color: $blue !important;
+          .novel_hyouka label
+          {
+              color: $yellow !important;
+          }
 
-        :visited
-        {
-            color: $violet !important;
-        }
-    }
-}
+          .novel_title,
+          .novel_subtitle,
+          .novel_writername,
+          .chapter_title,
+          .genre,
+          #warning,
+          {
+              background-color: $base02 !important;
+              color:            $base1  !important;
+          }
+
+          #pageBottom,
+          #pageTop,
+          {
+              display: none !important;
+          }
+
+          img
+          {
+              background-color: #FFFFFF !important;
+          }
+
+          a
+          {
+              color: $blue !important;
+
+              :visited
+                   {
+                       color: $violet !important;
+                   }
+          }
+      }

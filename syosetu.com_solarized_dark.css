@@ -1,15 +1,15 @@
 /*
   syosetu.com - solarized dark
-  */
+*/
 /*
   My original code module is CC0 - Public Domain.
-  */
+*/
 /*
   Credit
-  */
+*/
 /*
   Based on solarized http://ethanschoonover.com/solarized
-  */
+*/
 /*
   Copyright (c) 2011 Ethan Schoonover
 
@@ -31,7 +31,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-@-moz-document regexp('^https?://(ncode|novel18)\\.syosetu\\.com/[^/]*/$'), regexp('^https?://(ncode|novel18)\\.syosetu\\.com/[^/]*/[^/\\D]*/$') {
+@-moz-document regexp('^https?://(ncode|novel18)\\.syosetu\\.com/[^/]*/$'),
+regexp('^https?://(ncode|novel18)\\.syosetu\\.com/[^/]*/[^/\\D]*/$') {
   body,
   input,
   .novel_hyouka,
@@ -80,7 +81,8 @@ THE SOFTWARE.
   .novel_subtitle,
   .novel_writername,
   .chapter_title,
-  .genre {
+  .genre,
+  #warning {
     background-color: #073642 !important;
     color: #93a1a1 !important;
   }
