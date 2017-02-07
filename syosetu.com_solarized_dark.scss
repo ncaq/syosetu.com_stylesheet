@@ -2,11 +2,6 @@
   syosetu.com - solarized dark
 */
 
-/*
-This software is released under the MIT License.
-For more information on the LICENSE file.
-*/
-
 $base03:  #002b36;
 $base02:  #073642;
 $base01:  #586e75;
@@ -73,7 +68,6 @@ $green:   #859900;
         background:    none;
 
         border-color:  $base01   !important;
-        /* border-bottom: solid 1px !important; */
     }
 
     .novel_hyouka label
@@ -107,9 +101,9 @@ $green:   #859900;
     {
         color: $blue !important;
 
-        :visited
-             {
-                 color: $violet !important;
-             }
+        &:visited
+        {
+            color: $violet !important;
+        }
     }
 }
