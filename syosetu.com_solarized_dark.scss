@@ -2,109 +2,102 @@
   syosetu.com - solarized dark
 */
 
-$base03:  #002b36;
-$base02:  #073642;
-$base01:  #586e75;
-$base00:  #657b83;
-$base0:   #839496;
-$base1:   #93a1a1;
-$base2:   #eee8d5;
-$base3:   #fdf6e3;
-$yellow:  #b58900;
-$orange:  #cb4b16;
-$red:     #dc322f;
+$base03: #002b36;
+$base02: #073642;
+$base01: #586e75;
+$base00: #657b83;
+$base0: #839496;
+$base1: #93a1a1;
+$base2: #eee8d5;
+$base3: #fdf6e3;
+$yellow: #b58900;
+$orange: #cb4b16;
+$red: #dc322f;
 $magenta: #d33682;
-$violet:  #6c71c4;
-$blue:    #268bd2;
-$cyan:    #2aa198;
-$green:   #859900;
+$violet: #6c71c4;
+$blue: #268bd2;
+$cyan: #2aa198;
+$green: #859900;
 
-@-moz-document regexp('https?://(ncode|novel(18)?)\\.syosetu\\.(com|org)/.*')
-{
-    body,
-    input,
-    .novel_hyouka,
-    .recommend_novel,
-    .contents2,
-    #container,                 // syosetu.org
-    #novel_color,
-    #menu_on,
-    #hyoukalan,
-    #novel_attention,
-    #recommend,
-    #footer,
-    #header_main,               // mobile
-    #head_nav,                  // mobile
-    #header_bar,                // mobile
-    {
-        background-color: $base03 !important;
-        color:            $base0  !important;
-        border-color:     $base01 !important;
+@-moz-document regexp('https?://(ncode|novel(18)?)\\.syosetu\\.(com|org)/.*') {
+  body,
+  input,
+  .novel_hyouka,
+  .recommend_novel,
+  .contents2,
+  #container,                 // syosetu.org
+  #novel_color,
+  #menu_on,
+  #hyoukalan,
+  #novel_attention,
+  #recommend,
+  #footer,
+  // mobile
+  #header_main,
+  #head_nav,
+  #header_bar {
+    background-color: $base03 !important;
+    color: $base0 !important;
+    border-color: $base01 !important;
+  }
+
+  #container,                 // syosetu.org
+  // mobile
+  #entry_box {
+    border-style: none !important;
+  }
+
+  input,
+  .genre,
+  #hyoukalan,
+  #novel_attention,
+  // mobile
+  .link_back,
+  #head_nav li, {
+    border-color: $base01 !important;
+  }
+
+  .contents1,
+  .nothing,
+  .novelnavi a,               // syosetu.org mobile
+  #novel_header,
+  // mobile
+  .novel_bn,
+  #header_main,
+  #head_nav {
+    background: none;
+
+    border-color: $base01 !important;
+  }
+
+  .novel_hyouka label {
+    color: $yellow !important;
+  }
+
+  .novel_title,
+  .novel_subtitle,
+  .novel_writername,
+  .chapter_title,
+  .genre,
+  #warning {
+    background-color: $base02 !important;
+    color: $base1 !important;
+  }
+
+  #pageBottom,
+  #pageTop {
+    display: none !important;
+  }
+
+  img {
+    background-color: #ffffff !important;
+  }
+
+  a {
+    color: $blue !important;
+
+    &:visited {
+      color: $violet !important;
     }
-
-    #container,                 // syosetu.org
-    #entry_box,                 // syosetu.org mobile
-    {
-        border-style: none !important;
-    }
-
-    input,
-    .genre,
-    .link_back,                 // mobile
-    #head_nav li,               // mobile
-    #hyoukalan,
-    #novel_attention,
-    {
-        border-color: $base01 !important;
-    }
-
-    .contents1,
-    .nothing,
-    .novel_bn,                  // mobile
-    .novelnavi a,               // syosetu.org mobile
-    #novel_header,
-    #header_main,               // mobile
-    #head_nav,                  // mobile
-    {
-        background:    none;
-
-        border-color:  $base01   !important;
-    }
-
-    .novel_hyouka label
-    {
-        color: $yellow !important;
-    }
-
-    .novel_title,
-    .novel_subtitle,
-    .novel_writername,
-    .chapter_title,
-    .genre,
-    #warning,
-    {
-        background-color: $base02 !important;
-        color:            $base1  !important;
-    }
-
-    #pageBottom,
-    #pageTop,
-    {
-        display: none !important;
-    }
-
-    img
-    {
-        background-color: #FFFFFF !important;
-    }
-
-    a
-    {
-        color: $blue !important;
-
-        &:visited
-        {
-            color: $violet !important;
-        }
-    }
+  }
 }
