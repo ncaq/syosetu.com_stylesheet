@@ -19,7 +19,8 @@ $blue: #268bd2;
 $cyan: #2aa198;
 $green: #859900;
 
-@-moz-document regexp('https?://(ncode|novel(18)?)\\.syosetu\\.(com|org)/.*') {
+@-moz-document regexp('^https?://(ncode|novel(18)?)\\.syosetu\\.com/.*'),
+regexp('^https?://syosetu\\.org/novel/.+\\.html$') {
   body,
   input,
   .novel_hyouka,
