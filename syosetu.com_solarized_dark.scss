@@ -20,7 +20,8 @@ $cyan: #2aa198;
 $green: #859900;
 
 @-moz-document regexp('^https?://(ncode|novel(18)?)\\.syosetu\\.com/.*'),
-regexp('^https?://syosetu\\.org/novel/.+\\.html$') {
+regexp('^https?://syosetu\\.org/novel/.+\\.html$')
+{
   body,
   input,
   .novel_hyouka,
@@ -54,7 +55,7 @@ regexp('^https?://syosetu\\.org/novel/.+\\.html$') {
   #novel_attention,
   // mobile
   .link_back,
-  #head_nav li, {
+  #head_nav li {
     border-color: $base01 !important;
   }
 
