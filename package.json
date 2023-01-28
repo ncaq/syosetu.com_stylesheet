@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "sass --no-source-map syosetu.com_solarized_dark.scss:syosetu.com_solarized_dark.css"
+  },
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}
